@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person</title>
+</head>
+<body>
+    <script>
+        class Person{
+            constructor(name, email, mobile, address){
+                this.setProfile(name, email, mobile, address);
+            }
+
+            setProfile(name, email, mobile, address){
+                this.profile = `Name: ${name}\nEmail: ${email}\nMobile: ${mobile}\nAddress: ${address}`;
+            }
+
+            getProfile(){
+                return this.profile;
+            }
+        }
+
+        const pObj = new Person('Rabbani', 'rabbanishaik1421@gmail.com', '7981492625', 'Vijayawada');
+        console.log(pObj.getProfile())
+    </script>
+</body>
+</html>

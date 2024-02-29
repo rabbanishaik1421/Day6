@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber Price</title>
+</head>
+<body>
+    <script>
+        class Uber{
+            constructor(km){
+                this.km = km;
+                this.price=km*5;
+            }
+
+            getPrice(){
+                console.log(`Price: ${this.price}`);
+            }
+        }
+
+        const uobj = new Uber(25);
+        uobj.getPrice();
+    </script>
+</body>
+</html>

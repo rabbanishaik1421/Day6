@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oops Concept</title>
+</head>
+<body>
+    <script>
+        class Movie{
+            constructor(title, studio, rating){
+                this.title = title;
+                this.studio = studio;
+
+                if(rating == undefined || rating == ''){
+                    this.rating = 'PG';
+                }else{
+                    this.rating = rating;
+                }                
+            }
+
+        }
+
+        console.log('With Rating')
+        const mObj1 = new Movie('Casino Royale', 'Eon Productions', 'PG­13');
+        console.log(mObj1);
+
+        console.log('With Default Rating')
+        const mObj2 = new Movie('Dhamaka', 'Peoples Media');
+        console.log(mObj2);
+    </script>
+</body>
+</html>
